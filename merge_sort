@@ -1,0 +1,32 @@
+function mergeSort(arr):
+    if length of arr <= 1:
+        return arr
+
+    mid = length of arr / 2
+    left = arr[0:mid]
+    right = arr[mid:end]
+    
+    left = mergeSort(left)
+    right = mergeSort(right)
+
+    merged = merge(left, right)
+    return merged
+
+function merge(left, right):
+    result = empty array
+    leftIndex = 0
+    rightIndex = 0
+
+
+    while leftIndex < length of left and rightIndex < length of right:
+        if left[leftIndex] < right[rightIndex]:
+            add left[leftIndex] to result
+            leftIndex++
+        else:
+            add right[rightIndex] to result
+            rightIndex++
+
+    append remaining elements in left to result
+    append remaining elements in right to result
+
+    return result

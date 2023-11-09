@@ -1,0 +1,9 @@
+Step 1: Array arr with N size
+
+Step 2: Initialise i=0 
+
+Step 3: If(i<N-1) Check for any element arr[j] where j>i and arr[j]<arr[i] then Swap arr[i] and arr[j]
+
+Step 4: i=i+1 and Goto Step 3
+
+Step 5: Exit

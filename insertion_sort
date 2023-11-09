@@ -1,0 +1,15 @@
+Step 1: Repeat Steps 2 to 5 for K = 1 to N-1
+
+Step 2: set temp = A[K]
+
+Step 3: set J = K – 1
+
+Step 4: Repeat while temp <=A[J]
+set A[J + 1] = A[J]
+set J = J – 1
+[end of inner loop]
+
+Step 5: set A[J + 1] = temp
+[end of loop]
+
+Step 6: exit

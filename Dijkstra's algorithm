@@ -1,0 +1,15 @@
+//Dijkstra's algorithm for single-source shortest paths
+//Input: A weighted connected graph G = (V, E) with nonnegative weights and its vertex s
+//Output: The length d, of a shortest path from s to v
+// and its penultimate vertex p, for every vertex v in V
+Initialize(Q) //initialize priority queue to empty for every vertex v in V
+d00; Pu← null
+Insert(Q, v, d) //initialize vertex priority in the priority queue
+ds0; Decrease(Q, s, ds) //update priority of s with ds
+for i 0 to [V] - 1 do
+u* Delete Min(Q) //delete the minimum priority element
+VTV₁ U {u}
+for every vertex u in V - Vr that is adjacent to u* do
+if du+w(u*, u) < du
+dudu+w(u*, u); Puu*
+Decrease(Q, u, d)
